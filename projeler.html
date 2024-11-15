@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeler</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="navbar"></div> 
+    <script src="navbar.js"></script>
+
+    <div class="center-box">
+        <div class="text-box">
+
+            <div class="filters" style="text-align: center; margin: 20px;">
+                <button onclick="filterProjects('all')">Tüm Projeler</button>
+                <button onclick="filterProjects('web')">Web</button>
+                <button onclick="filterProjects('hardware')">Donanım</button>
+                <button onclick="filterProjects('desktop')">Masaüstü</button>
+            </div>
+
+            <div class="project-box web">
+                
+                    <div class="project-img">
+                        <img class="project-img" src="images/blazor-app.png" alt="" style="width: 300px; height: 200px; margin-top: 30px;">
+                        <p>
+                            Bu projede Onion Architecture; MediatR ve CQRS Pattern’lerini kullanarak Ekşi Sözlük, İnci Sözlük, Uludağ 
+                            Sözlük gibi sitelere benzeyen web uygulamaması geliştirmektir. Bu süreçte Entity Framework, RabbitMQ, MS SQL ve 
+                            Blazor teknolojilerini anladım ve kullandım. 
+                        </p>
+                    </div>    
+                
+            </div>
+
+            <div class="project-box hardware">
+                
+                <div class="project-img">
+                    <img class="project-img" src="images/obd.jpg" alt="" style="width: 300px; height: 200px; margin-top: 30px;">
+                    <p>Trafik, yol, araç ve insan faktörlerinden oluşur. Bu unsurlardaki bozukluklar trafik kazalarına yol açar. 
+                        Özellikle uykulu otobüs şoförleri, ölümle sonuçlanabilecek kazalara neden olabilir. Yeni sistemimiz sayesinde 
+                        yeterince dinlenmemiş sürücüler, aracı süremeyecek. Şoförün yasal sürüş saatini doldurmasa da, uyku hali tespit 
+                        edilip, sürücü ve merkez uyarılarak olası kazalar engellenecektir.
+                    </p>
+                </div>     
+            </div>
+
+            <div class="project-box desktop">
+                
+                <div class="project-img">
+                    <img class="project-img" src="images/school.png" alt="" style="width: 300px; height: 200px; margin-top: 30px;">
+                    <p>
+                        Bu proje, öğretmen ve öğrenci girişlerini içeren bir form uygulamasıdır. Proje kapsamında, Excel dosyası
+                         üzerinden toplu öğrenci kaydı yapılabilmesi ve öğrenci bilgilerini değiştirme işlemleri gerçekleştirilmiştir.
+                         Veritabanı olarak MS SQL kullanılmıştır.
+                    </p>
+                </div>     
+            </div>
+        
+            
+        
+            
+            <div id="clock"></div>
+            <script src="clock.js"></script>
+        </div>
+    </div>
+
+    <script src="filter.js"></script>
+    
+</body>
+</html>
